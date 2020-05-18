@@ -1,7 +1,9 @@
 import sys
 
 
-def self():
+def get_value():
+    team1=sys.argv[1]
+    team2=sys.argv[2]
 
     def custom_accuracy(y_test,y_pred,thresold):
             right = 0
@@ -270,7 +272,7 @@ def self():
         else:
             i='SRH'
 
-    output="THE match between %s and %s from both %s will win the match"%(sys.argv[1],sys.argv[2],i)
+    output="THE match between %s and %s from both %s will win the match" %(team1,team2,i)
     # return render_template('prereturn.php',team1=team1,team2=team2,i=i)
     print(output) 
 

@@ -49,7 +49,7 @@
                 
                   
                 <div class="  col-md-6 col-sm-12">
-                  <form name="passdata" action="external" method="post">
+                  <form  action="external" method="post">
                     {% csrf_token %}
                     <div class="row b">
                         <div>
@@ -64,8 +64,9 @@
                             <option>DD</option>
                             <option>SRH</option>
                             <option>RR</option>
-                            </select>
                              {{data_external}} 
+                            </select>
+                            
                             <p class="vs">VS</p>
                              <select class="select1" name="team2" value="">
                             <option>Team2</option> 
@@ -77,8 +78,9 @@
                             <option>DD</option>
                             <option>SRH</option>
                             <option>RR</option>
-                            </select>
                             {{data_external}}
+                            </select>
+                            
                             
                             <!-- <input type="date" id="date"> -->
                             <center><input type="submit" id="btn" value="Check" class="btn btn-info tn" ></center>
@@ -88,7 +90,7 @@
                   </form>
                 </div>
                 <div class="qq  col-md-6 col-sm-12">
-                    <p> Result will be soon  here....</p>
+                    <p> </p>
                 </div>
             </div>
             <div class="link col-sm-12 ml-auto">

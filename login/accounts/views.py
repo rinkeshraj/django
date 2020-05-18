@@ -62,7 +62,7 @@ import sys
 def button(request):
     return render(request,'pre.html')
 def output(request):
-    data=requests.get("")
+    data=requests.get("http://127.0.0.1:8000/external/")
     print(data.text)
     data=data.text
     return render(request,'pre.html',{'data':data})  
@@ -71,6 +71,6 @@ def external(request):
     team1=request.POST.get('team1')
     team2=request.POST.get('team2')
     
-    out=run(sys.executable,['//usr//bin//minipro//hii.py',team1,team2],shell=False,stdout=PIPE)
+    out=run(sys.executable,['//c//Users//This pc//Desktop//minipro//hii.py',team1,team2],shell=False,stdout=PIPE)
     print(out)
-    return render(request,'pre.html',{'data1':out.stdout})
+    return render(request,'pre.html',{'data1':out})
